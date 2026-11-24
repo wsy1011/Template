@@ -1,0 +1,155 @@
+% interactapasample.tex
+% v1.05 - August 2017
+
+\documentclass[]{interact}
+
+\usepackage{epstopdf}% To incorporate .eps illustrations using PDFLaTeX, etc.
+\usepackage[caption=false]{subfig}% Support for small, `sub' figures and tables
+\usepackage{apacite}
+
+
+\theoremstyle{plain}% Theorem-like structures provided by amsthm.sty
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+\newtheorem{notation}{Notation}
+
+\begin{document}
+
+\articletype{ARTICLE TEMPLATE}% Specify the article type or omit as appropriate
+
+\title{Taylor \& Francis \LaTeX\ template for authors (\textsf{Interact} layout + American Psychological Association reference style)}
+
+\author{
+\name{A.~N. Author\textsuperscript{a}\thanks{CONTACT A.~N. Author. Email: latex.helpdesk@tandf.co.uk} and John Smith\textsuperscript{b}}
+\affil{\textsuperscript{a}Taylor \& Francis, 4 Park Square, Milton Park, Abingdon, UK; \textsuperscript{b}Institut f\"{u}r Informatik, Albert-Ludwigs-Universit\"{a}t, Freiburg, Germany}
+}
+
+\maketitle
+
+\begin{abstract}
+This template is for authors who are preparing a manuscript for a Taylor \& Francis journal.
+Xxxxx.
+\end{abstract}
+
+\begin{keywords}
+Sections; lists; figures; tables; mathematics; fonts; references; appendices
+\end{keywords}
+
+
+\section{Introduction}
+
+Xxxxx
+
+
+\subsection{XXXX}
+
+Xxxx
+
+% 文中引用案例
+XXXX\cite{Adams1973},\cite{Adams1973,Bro07}
+
+
+
+\section{Examples} 
+Xxxx
+
+\subsection{itemize}
+ 
+\begin{itemize}
+  \item First bulleted item
+  \item Second bulleted item
+  \item Third bulleted item
+\end{itemize}
+was produced by
+
+
+\subsection{Figures}
+
+\begin{figure}
+\centering
+\subfloat[An example of an individual figure sub-caption.]{%
+\resizebox*{5cm}{!}{\includegraphics{graph1.eps}}}\hspace{5pt}
+\subfloat[A slightly shorter sub-caption.]{%
+\resizebox*{5cm}{!}{\includegraphics{graph2.eps}}}
+\caption{Example of a two-part figure with individual sub-captions
+ showing that captions are flush left and justified if greater
+ than one line of text.} \label{sample-figure}
+\end{figure}
+
+
+
+\subsection{Tables}
+
+\begin{table}
+\tbl{Example of a table showing that its caption is as wide as
+ the table itself and justified.}
+{\begin{tabular}{lcccccc} \toprule
+ & \multicolumn{2}{l}{Type} \\ \cmidrule{2-7}
+ Class & One & Two & Three & Four & Five & Six \\ \midrule
+ Alpha\textsuperscript{a} & A1 & A2 & A3 & A4 & A5 & A6 \\
+ Beta & B2 & B2 & B3 & B4 & B5 & B6 \\
+ Gamma & C2 & C2 & C3 & C4 & C5 & C6 \\ \bottomrule
+\end{tabular}}
+\tabnote{\textsuperscript{a}This footnote shows how to include
+ footnotes to a table if required.}
+\label{sample-table}
+\end{table}
+
+
+
+
+
+
+
+\subsection{equation}
+
+\begin{equation}
+ \hat{\theta}_{w_i} = \hat{\theta}(s(t,\mathcal{U}_{w_i}))
+\end{equation}
+
+
+\begin{subequations} \label{subeqnexample}
+\begin{equation}
+     \varepsilon \rho w_{tt}(s,t) = N[w_{s}(s,t),w_{st}(s,t)]_{s},
+     \label{subeqnparta}
+\end{equation}
+\begin{equation}
+     w_{tt}(1,t)+N[w_{s}(1,t),w_{st}(1,t)] = 0,   \label{subeqnpartb}
+\end{equation}
+\end{subequations}
+
+
+
+
+\section*{Acknowledgement(s)}
+
+This section is used for thanks, etc. before any Notes or References.
+
+
+
+
+\section*{Funding}
+
+This section is used for grant details, etc.\ if required and included \emph{in the non-anonymous version} before any Notes or References.
+
+
+
+
+
+\bibliographystyle{apacite}
+\bibliography{interactapasample}
+
+
+%\section{Appendices}
+
+
+\end{document}

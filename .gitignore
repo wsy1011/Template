@@ -1,0 +1,6 @@
+# Use the versions provided by the TeX distribution.
+/templates/taylor-francis/interact-apa/apacite.bst
+/templates/taylor-francis/interact-apa/booktabs.sty
+/templates/taylor-francis/interact-apa/epsfig.sty
+/templates/taylor-francis/interact-apa/rotating.sty
+/templates/taylor-francis/interact-apa/subfig.sty
